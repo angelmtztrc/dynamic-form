@@ -39,7 +39,10 @@ const FieldsForm = ({ fields, setFields }: FieldsFormProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-1/3">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col space-y-4 w-full lg:w-1/3"
+    >
       <div className="flex flex-col space-y-2">
         <label htmlFor="labelField" className="text-slate-50">
           Field Label

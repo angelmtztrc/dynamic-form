@@ -6,7 +6,7 @@ import Field from './Field';
 
 const Fields = ({ fields }: FieldsProps) => {
   return (
-    <form className="flex flex-col space-y-4 w-1/3">
+    <form className="flex flex-col space-y-4 w-full lg:w-1/3">
       {fields.length <= 0 ? (
         <p className="text-center text-lg text-slate-50 font-bold">
           Not fields yet
