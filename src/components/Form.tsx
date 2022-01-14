@@ -14,7 +14,7 @@ const Form = ({}: FormProps) => {
   const { fields, setFields } = useFields();
 
   return (
-    <div className="mt-10 flex justify-center gap-8">
+    <div className="mt-10 flex flex-col lg:flex-row justify-center gap-8">
       <FieldsForm fields={fields} setFields={setFields} />
       <Fields fields={fields} />
     </div>
