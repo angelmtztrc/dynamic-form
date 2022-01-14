@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 // interfaces
 import { Field } from '../interfaces/field';
@@ -7,8 +7,11 @@ import { Field } from '../interfaces/field';
 import FieldsForm from './FieldsForm';
 import Fields from './Fields';
 
+// hooks
+import useFields from '../hooks/useFields';
+
 const Form = ({}: FormProps) => {
-  const [fields, setFields] = useState<Field[]>([]);
+  const { fields, setFields } = useFields();
 
   return (
     <div className="mt-10 flex justify-center gap-8">
