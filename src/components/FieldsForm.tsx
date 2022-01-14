@@ -19,6 +19,8 @@ const FieldsForm = ({ fields, setFields }: FieldsFormProps) => {
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
 
+    if (!values.label) return;
+
     setFields([
       ...fields,
       {
