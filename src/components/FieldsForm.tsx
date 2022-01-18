@@ -53,7 +53,7 @@ const FieldsForm = ({ fields, setFields }: FieldsFormProps) => {
           value={values.label}
           type="text"
           onChange={handleChange}
-          className="appearance-none px-4 py-2 rounded"
+          className="input"
         />
       </div>
       <div className="flex flex-col space-y-2">
